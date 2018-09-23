@@ -17,15 +17,25 @@ class ListController {
 
     }// End onBtnDel
 
-    onBtnAdd(){
-
-        this.btnAdd.addEventListener('click', ev=>{
+    getAtiv(){
             let ativ = this.addAtivEl.value;
             if(ativ != ''){
                 this.addAtivEl.value = '';
                 this.addAtiv(ativ)  
             }
+    }// End getAtiv
+
+    onBtnAdd(){
+
+        this.btnAdd.addEventListener('click', ev=>{
+            this.getAtiv();
         });
+
+        document.addEventListener('keyup', e=>{
+            if(e.key == 'Enter'){
+                this.getAtiv();
+            }
+        })
 
     }// End onBtnAdd
 
