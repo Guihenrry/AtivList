@@ -31,7 +31,7 @@ h1 {
 	margin-right: auto;
 }
 
-input {
+.add-ativ {
 	outline: none;
 	border: 1px solid #616161;
 	border-right: none;
@@ -48,6 +48,7 @@ input {
 	width: 15%;
 	padding: 6px;
 	margin-right: 10px;
+	cursor: pointer;
 }
 
 .btn-add:hover {
@@ -80,6 +81,7 @@ input {
 	background-color: #e57373;
 	color: #fff;
 	margin-right: 10px;
+	cursor: pointer;
 }
 
 .btn-del:hover {
